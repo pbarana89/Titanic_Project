@@ -40,4 +40,32 @@
 
     - Due to the simplistic nature of the model, it struggles with complex relationships. This model can be outperformed quite easily by Neural Networks if you are willing to invest the time and capital to create one.
 
+##### Training of the Model
+
+- I chose to use MinMaxScaler as this package deals with data that has a larger amount of outliers for Fare. 
+
+- The training and testing was split into a 75/25 split after multiple attempts to see how this affected the results.
+
+### Results of the Model. 
+
+- In our Logistic Regression model we had 
+  - True Positive(TP)  =  54
+  - False Positive(FP) =  28
+  - True Negative(TN)  =  109
+  - False Negative(FN) =  32
+
+- This led to an accuracy of the binary classification of 73.1%.
+
+- I looked into other classification models and they produced the below results.
+
+![](https://github.com/pbarana89/Titanic_Project/blob/main/Accuracy_Results.JPG)
+
+
+### Recommendations for Future Analysis
+
+- The first recommendation I noted that is to possibly look to binning in a different manner. Possibly binning according to standard deviation versus mean might be more helpful. 
+
+- Another recommendation would be to look into using another model. As stated earlier, logistic regression is simplistic and might not have done well due to the small amount of data.
+
+- Further working on gaining more insight on fares, names, and ticket numbers to hopefully provide more information on age and possibly cabin information would also be incredibly important.
 
